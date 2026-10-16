@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Contact Us | BABA ASTRO Astrologer Joining</title>
+  <meta name="description" content="Contact BABA ASTRO for astrologer application and partner onboarding enquiries. Find application guidance and support information.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#111027">
+  <meta property="og:title" content="Contact BABA ASTRO">
+  <meta property="og:description" content="Get information about astrologer applications and onboarding.">
+  <meta property="og:image" content="baba-astro-logo.png">
+  <link rel="icon" href="baba-astro-logo.png">
+
+  <style>
+    :root {
+      --navy: #111027;
+      --gold: #e6bd68;
+      --cream: #fffaf0;
+      --muted: #c2bdd1;
+      --border: rgba(230,189,104,.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: min(1080px, 92%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(17,16,39,.97);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand img {
+      width: 155px;
+      max-height: 60px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .navlinks { display: flex; align-items: center; gap: 20px; }
+    .navlinks a { color: var(--muted); font-size: 14px; }
+    .navlinks a:hover, .navlinks .active { color: var(--gold); }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: linear-gradient(135deg,#f5dc98,#d1a348);
+      color: #191329;
+      font-weight: 800;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-outline {
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      background: transparent;
+    }
+
+    .menu-toggle {
+      display: none;
+      padding: 8px 12px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--gold);
+      border-radius: 7px;
+      font-size: 19px;
+    }
+
+    .hero {
+      padding: 70px 0 48px;
+      text-align: center;
+      background: radial-gradient(ellipse at top,#493064,transparent 65%);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(36px,5vw,52px);
+      line-height: 1.2;
+      margin: 14px 0;
+    }
+
+    h2 { font-size: 27px; line-height: 1.3; }
+    h3 { font-size: 19px; }
+    .gold { color: var(--gold); }
+    p { color: var(--muted); }
+
+    .hero p { max-width: 680px; margin: auto; }
+
+    .section { padding: 30px 0 75px; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 25px;
+      align-items: start;
+    }
+
+    .panel {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(145deg,#251b3c,#17142b);
+    }
+
+    .panel h2 { color: var(--gold); margin-bottom: 10px; }
+    .panel > p { font-size: 14px; }
+
+    .contact-item {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-item h3 { margin-bottom: 5px; }
+    .contact-item p { font-size: 14px; }
+
+    .contact-placeholder {
+      margin-top: 8px;
+      color: var(--gold);
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      margin-top: 20px;
+      padding: 14px;
+      background: rgba(230,189,104,.08);
+      border-left: 3px solid var(--gold);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .form-intro { margin-bottom: 22px; font-size: 14px; }
+
+    .fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .field { min-width: 0; }
+    .full { grid-column: 1 / -1; }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #514468;
+      border-radius: 8px;
+      background: #151126;
+      color: var(--cream);
+      font: inherit;
+      font-size: 14px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: 2px solid rgba(230,189,104,.3);
+      border-color: var(--gold);
+    }
+
+    input::placeholder, textarea::placeholder { color: #9288a6; }
+    select option { background: #151126; }
+    textarea { min-height: 140px; resize: vertical; }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 18px 0;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .consent input { width: auto; margin-top: 6px; }
+
+    .submit-btn { width: 100%; font-size: 15px; }
+    .form-message { margin-top: 14px; font-size: 14px; overflow-wrap: anywhere; }
+
+    .bottom-cta {
+      margin-top: 30px;
+      padding: 38px 25px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      text-align: center;
+      background: radial-gradient(ellipse at top,#493064,transparent 70%),#211936;
+    }
+
+    .bottom-cta h2 { margin: 10px 0; }
+    .bottom-cta p { max-width: 650px; margin: 0 auto 20px; }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 140px;
+      max-height: 55px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    footer p { font-size: 13px; }
+
+    @media(max-width:800px) {
+      .menu-toggle { display: block; }
+      .brand img { width: 135px; }
+
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 20px 5%;
+        background: var(--navy);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .navlinks.open { display: flex; }
+      .nav-cta { display: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding: 50px 0 35px; }
+    }
+
+    @media(max-width:480px) {
+      .fields { grid-template-columns: 1fr; }
+      .full { grid-column: auto; }
+      .panel { padding: 21px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="BABA ASTRO Home">
+      <img src="baba-astro-logo.png" alt="BABA ASTRO logo" width="155" height="60">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu"
+      aria-expanded="false" aria-controls="mainMenu">☰</button>
+
+    <div class="navlinks" id="mainMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="faq.html">FAQs</a>
+      <a class="active" href="contact.html">Contact</a>
+    </div>
+
+    <a class="btn nav-cta" href="apply.html">Apply Now →</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">WE'RE HERE TO HELP</span>
+      <h1>Contact <span class="gold">BABA ASTRO</span></h1>
+      <p>
+        Have a question about astrologer registration, your application
+        or the onboarding process? Use this page to find the right
+        contact information or prepare an enquiry.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <aside class="panel">
+          <h2>Contact Information</h2>
+          <p>
+            Add and verify your official contact details before
+            publishing this page.
+          </p>
+
+          <div class="contact-item">
+            <h3>✉ Email Support</h3>
+            <p>For application and partnership enquiries.</p>
+            <div class="contact-placeholder">
+              Replace with your official support email
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <h3>☎ WhatsApp Support</h3>
+            <p>For questions about registration and next steps.</p>
+            <div class="contact-placeholder">
+              Add your verified WhatsApp Business number
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <h3>📋 Application Help</h3>
+            <p>
+              Visit the application page to review the information
+              required from prospective astrologer partners.
+            </p>
+            <p style="margin-top:10px">
+              <a class="btn btn-outline" href="apply.html">Open Application →</a>
+            </p>
+          </div>
+
+          <div class="notice">
+            Please do not publish invented email addresses or phone
+            numbers. Use contact details that you own or are authorized
+            to use.
+          </div>
+        </aside>
+
+        <section class="panel">
+          <h2>Send an Enquiry</h2>
+          <p class="form-intro">
+            Complete the fields below to prepare your enquiry.
+          </p>
+
+          <!--
+            This contact form is not connected to an email service
+            or database. Configure a secure backend before accepting
+            real enquiries.
+          -->
+
+          <form id="contactForm">
+            <div class="fields">
+
+              <div class="field">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text"
+                  placeholder="Enter your name" autocomplete="name"
+                  minlength="2" maxlength="100" required>
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email"
+                  placeholder="you@example.com" autocomplete="email"
+                  maxlength="150" required>
+              </div>
+
+              <div class="field">
+                <label for="topic">Enquiry Type *</label>
+                <select id="topic" name="topic" required>
+                  <option value="">Choose an enquiry type</option>
+                  <option value="Astrologer application">Astrologer application</option>
+                  <option value="Application status">Application status</option>
+                  <option value="Partner terms">Partner terms</option>
+                  <option value="Technical issue">Technical issue</option>
+                  <option value="General enquiry">General enquiry</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="phone">Contact Number (Optional)</label>
+                <input id="phone" name="phone" type="tel"
+                  placeholder="Your contact number" autocomplete="tel"
+                  maxlength="20">
+              </div>
+
+              <div class="field full">
+                <label for="message">Your Message *</label>
+                <textarea id="message" name="message"
+                  placeholder="Tell us how we can help..." minlength="10"
+                  maxlength="2000" required></textarea>
+              </div>
+
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" id="consent" name="consent" required>
+              <span>
+                I agree that the information I provide may be used
+                to respond to my enquiry, as explained in the
+                <a href="privacy.html" style="color:var(--gold)">Privacy Policy</a>.
+              </span>
+            </label>
+
+            <button class="btn submit-btn" type="submit">
+              Prepare Enquiry →
+            </button>
+
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+      </div>
+
+      <div class="bottom-cta">
+        <span class="eyebrow">ASTROLOGER PARTNER PROGRAM</span>
+        <h2>Interested in Joining Us?</h2>
+        <p>
+          Review the registration details and prepare your application
+          to express interest in joining BABA ASTRO.
+        </p>
+        <a class="btn" href="apply.html">Apply as an Astrologer →</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="index.html">
+      <img class="footer-logo" src="baba-astro-logo.png" alt="BABA ASTRO logo">
+    </a>
+
+    <p>Astrologer applications and professional onboarding.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="apply.html">Apply Now</a>
+      <a href="faq.html">FAQs</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+    <p>© <span id="year"></span> BABA ASTRO. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuButton = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".navlinks");
+
+  menuButton.addEventListener("click", function() {
+    const open = menu.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+
+  menu.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      menu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("formMessage").textContent =
+      "This enquiry form is not connected to an email service or database yet. Your message has NOT been sent or saved. Please configure the form backend before publishing it.";
+    document.getElementById("formMessage").style.color = "#f3cf7d";
+  });
+</script>
+
+</body>
+</html>
