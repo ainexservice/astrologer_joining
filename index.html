@@ -1,0 +1,845 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111027">
+
+  <title>Join BABA ASTRO as an Astrologer | Apply Online</title>
+
+  <meta name="description" content="Join BABA ASTRO as an astrologer. Explore partner opportunities, showcase your astrology expertise and apply online through our astrologer registration process.">
+
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Join BABA ASTRO as an Astrologer">
+  <meta property="og:description" content="Share your astrology expertise. Explore partner opportunities with BABA ASTRO.">
+  <meta property="og:image" content="baba-astro-logo.png">
+
+  <!-- Replace with your real domain after publishing -->
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+
+  <link rel="icon" href="baba-astro-logo.png">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    :root {
+      --navy: #111027;
+      --purple: #291b49;
+      --gold: #e6bd68;
+      --cream: #fffaf0;
+      --muted: #c2bdd1;
+      --border: rgba(230,189,104,.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img { max-width: 100%; }
+
+    .container {
+      width: min(1160px, 92%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(17,16,39,.97);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .brand img {
+      display: block;
+      width: 175px;
+      max-height: 65px;
+      object-fit: contain;
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .navlinks a {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .navlinks a:hover,
+    .navlinks a.active {
+      color: var(--gold);
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 23px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #f5dc98, #d1a348);
+      color: #191329;
+      font-weight: 800;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-align: center;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.06);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      padding: 9px 12px;
+      color: var(--gold);
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      font-size: 19px;
+      cursor: pointer;
+    }
+
+    .hero {
+      overflow: hidden;
+      position: relative;
+      padding: 90px 0 80px;
+      background:
+        radial-gradient(ellipse at 85% 25%, #493064 0, transparent 42%),
+        radial-gradient(ellipse at 5% 95%, #30204f 0, transparent 38%),
+        var(--navy);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 19px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.13;
+      letter-spacing: -1.5px;
+      margin-bottom: 22px;
+    }
+
+    .gold { color: var(--gold); }
+
+    .hero-copy {
+      max-width: 590px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 28px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .trust-row span::before {
+      content: "✦ ";
+      color: var(--gold);
+    }
+
+    .hero-art {
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .orbit {
+      width: min(355px, 100%);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(230,189,104,.5);
+      border-radius: 50%;
+      background: radial-gradient(circle, #392653, #211635 62%, transparent 70%);
+      position: relative;
+    }
+
+    .orbit::before,
+    .orbit::after {
+      position: absolute;
+      color: var(--gold);
+      font-size: 29px;
+    }
+
+    .orbit::before {
+      content: "✦";
+      top: 25px;
+      right: 30px;
+    }
+
+    .orbit::after {
+      content: "✧";
+      bottom: 30px;
+      left: 25px;
+    }
+
+    .hero-logo {
+      width: 185px;
+      height: 185px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 22px rgba(230,189,104,.18));
+    }
+
+    .art-caption {
+      position: absolute;
+      bottom: 0;
+      padding: 12px 20px;
+      background: #211832;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .art-caption strong {
+      display: block;
+      color: var(--gold);
+    }
+
+    .art-caption small { color: var(--muted); }
+
+    .section { padding: 76px 0; }
+
+    .section-heading {
+      text-align: center;
+      max-width: 730px;
+      margin: 0 auto 40px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(28px, 4vw, 41px);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .section-heading p { color: var(--muted); }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 27px;
+      background: linear-gradient(145deg, #291e43, #19152d);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+
+    .card-icon {
+      font-size: 30px;
+      margin-bottom: 13px;
+    }
+
+    .card h3 {
+      font-size: 19px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card-link {
+      display: inline-block;
+      color: var(--gold);
+      margin-top: 17px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .process { background: #17132b; }
+
+    .step-number {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .categories .card {
+      text-align: center;
+    }
+
+    .cta {
+      padding: 55px 25px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at top, #493064, transparent 65%),
+        #1b1530;
+    }
+
+    .cta h2 {
+      font-size: clamp(27px, 4vw, 40px);
+      margin-bottom: 13px;
+    }
+
+    .cta p {
+      color: var(--muted);
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    details {
+      padding: 19px 21px;
+      margin-bottom: 13px;
+      background: #211936;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    details p {
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    footer {
+      padding: 38px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 150px;
+      max-height: 65px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 19px;
+      margin: 17px 0;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    @media (max-width: 850px) {
+      .navbar { min-height: 74px; }
+
+      .brand img { width: 140px; }
+
+      .menu-toggle { display: block; }
+
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        padding: 22px 5%;
+        background: #111027;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+      }
+
+      .navlinks.open { display: flex; }
+
+      .navlinks a { font-size: 16px; }
+
+      .nav-cta { display: none; }
+
+      .hero { padding: 58px 0; }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .hero-art { min-height: 320px; }
+
+      .cards { grid-template-columns: 1fr; }
+
+      .section { padding: 55px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "BABA ASTRO",
+    "logo": "baba-astro-logo.png",
+    "description": "Astrology partner applications and professional onboarding."
+  }
+  </script>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar container" aria-label="Main navigation">
+
+    <a class="brand" href="index.html" aria-label="BABA ASTRO Home">
+      <img src="baba-astro-logo.png"
+           alt="BABA ASTRO logo"
+           width="175" height="65">
+    </a>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mainMenu">
+      ☰
+    </button>
+
+    <div class="navlinks" id="mainMenu">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <a class="btn nav-cta" href="apply.html">Join as Astrologer ↗</a>
+
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <span class="eyebrow">✦ ASTROLOGER PARTNER PROGRAM</span>
+
+        <h1>
+          Join BABA ASTRO<br>
+          as an <span class="gold">Astrologer</span>
+        </h1>
+
+        <p class="hero-copy">
+          Share your astrology expertise, connect with people seeking
+          guidance and explore professional opportunities with BABA ASTRO.
+          Start by submitting your astrologer application online.
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="apply.html">Apply Now — Free Application →</a>
+          <a class="btn btn-outline" href="benefits.html">Explore Benefits</a>
+        </div>
+
+        <div class="trust-row">
+          <span>Simple Application</span>
+          <span>Profile Review</span>
+          <span>Partner Support</span>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="orbit">
+          <img class="hero-logo"
+               src="baba-astro-logo.png"
+               alt="BABA ASTRO astrology partner program logo"
+               width="185" height="185">
+        </div>
+
+        <div class="art-caption">
+          <strong>Wisdom Meets Opportunity</strong>
+          <small>Your journey as an astrology professional</small>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="section" id="benefits">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">WHY BABA ASTRO?</span>
+        <h2>Explore Opportunities for Your Astrology Practice</h2>
+        <p>
+          Discover the available partner options and learn how to
+          present your skills and experience.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">🌙</div>
+          <h3>Flexible Consultation Options</h3>
+          <p>
+            Indicate your preferred consultation method and availability
+            when submitting your application.
+          </p>
+          <a class="card-link" href="benefits.html">Learn More →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🔮</div>
+          <h3>Showcase Your Expertise</h3>
+          <p>
+            Tell us about your experience, specializations, languages
+            and approach to astrology.
+          </p>
+          <a class="card-link" href="apply.html">Submit Your Profile →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">✦</div>
+          <h3>Partner Onboarding</h3>
+          <p>
+            Learn about the application review process and the next
+            steps for eligible applicants.
+          </p>
+          <a class="card-link" href="about.html">About Our Process →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section categories" id="specializations">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">YOUR AREA OF EXPERTISE</span>
+        <h2>Which Astrology Specialization Do You Practice?</h2>
+        <p>
+          Choose the area that best describes your skills when
+          completing your application.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="card-icon">☀️</div>
+          <h3>Vedic Astrology</h3>
+          <p>Traditional astrological study and consultation.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📜</div>
+          <h3>Kundli Analysis</h3>
+          <p>Birth chart interpretation and related expertise.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🃏</div>
+          <h3>Tarot Reading</h3>
+          <p>Tarot-based consultation and interpretation.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🔢</div>
+          <h3>Numerology</h3>
+          <p>Number-based interpretive practices.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🏡</div>
+          <h3>Vastu</h3>
+          <p>Vastu-related knowledge and consultation.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">✨</div>
+          <h3>Other Specializations</h3>
+          <p>Tell us about any other relevant expertise.</p>
+        </article>
+
+      </div>
+
+      <div style="text-align:center;margin-top:32px">
+        <a class="btn" href="apply.html">Choose Your Expertise →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="how-it-works">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">SIMPLE STEPS</span>
+        <h2>How to Join BABA ASTRO</h2>
+        <p>Understand the application journey before getting started.</p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <div class="step-number">01</div>
+          <h3>Complete the Application</h3>
+          <p>
+            Enter your contact details, experience and specialization
+            in the online registration form.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="step-number">02</div>
+          <h3>Application Review</h3>
+          <p>
+            Your submitted details can be reviewed by the team.
+            Additional information may be requested if necessary.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="step-number">03</div>
+          <h3>Learn About Onboarding</h3>
+          <p>
+            Eligible applicants can receive further information
+            about available opportunities and applicable partner terms.
+          </p>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+
+      <div class="cta">
+        <span class="eyebrow">YOUR NEXT STEP</span>
+
+        <h2>Ready to Apply as an <span class="gold">Astrologer?</span></h2>
+
+        <p>
+          Introduce yourself, share your experience and submit your
+          details through the BABA ASTRO astrologer registration page.
+        </p>
+
+        <a class="btn" href="apply.html">Start Your Application →</a>
+
+        <p style="font-size:12px;margin-top:18px">
+          Application submission does not guarantee acceptance,
+          assignments or earnings.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ PREVIEW -->
+  <section class="section" id="faq">
+    <div class="container">
+
+      <div class="section-heading">
+        <span class="eyebrow">COMMON QUESTIONS</span>
+        <h2>Astrologer Joining FAQs</h2>
+        <p>Find basic information before you apply.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <details>
+          <summary>How can I join BABA ASTRO as an astrologer?</summary>
+          <p>
+            Visit the registration page, complete the application with
+            accurate details and submit it for review.
+          </p>
+        </details>
+
+        <details>
+          <summary>Which specializations can I mention?</summary>
+          <p>
+            You can select an available specialization such as Vedic
+            Astrology, Kundli Analysis, Tarot, Numerology or Vastu.
+            Other expertise can also be described in the form.
+          </p>
+        </details>
+
+        <details>
+          <summary>What happens after applying?</summary>
+          <p>
+            Your application should be reviewed through the configured
+            application process. The team can contact you regarding
+            further steps where appropriate.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is income guaranteed after joining?</summary>
+          <p>
+            No. Acceptance, assignments and earnings depend on eligibility,
+            actual opportunities and the applicable partner terms.
+          </p>
+        </details>
+
+      </div>
+
+      <div style="text-align:center;margin-top:28px">
+        <a class="btn btn-outline" href="faq.html">View All FAQs →</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <a href="index.html" aria-label="BABA ASTRO Home">
+      <img class="footer-logo"
+           src="baba-astro-logo.png"
+           alt="BABA ASTRO"
+           width="150" height="65">
+    </a>
+
+    <p>
+      A platform for astrology professionals to submit partner applications.
+    </p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="apply.html">Apply Now</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+    </div>
+
+    <p>
+      © <span id="year"></span> BABA ASTRO. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".navlinks");
+
+    if (menuButton && menu) {
+      menuButton.addEventListener("click", function () {
+        const isOpen = menu.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation menu");
+        });
+      });
+    }
+
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
+  });
+</script>
+
+</body>
+</html>
