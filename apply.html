@@ -1,0 +1,689 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Apply as an Astrologer | BABA ASTRO</title>
+  <meta name="description" content="Apply to join BABA ASTRO as an astrologer. Share your contact details, experience, specialization, languages and consultation preferences.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#111027">
+  <meta property="og:title" content="Apply as an Astrologer | BABA ASTRO">
+  <meta property="og:description" content="Submit your astrologer partner application to BABA ASTRO.">
+  <meta property="og:image" content="baba-astro-logo.png">
+
+  <link rel="icon" href="baba-astro-logo.png">
+
+  <style>
+    :root {
+      --navy: #111027;
+      --purple: #291b49;
+      --gold: #e6bd68;
+      --cream: #fffaf0;
+      --muted: #c2bdd1;
+      --border: rgba(230,189,104,.27);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--navy);
+      color: var(--cream);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .container { width: min(1080px, 92%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(17,16,39,.97);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand img {
+      display: block;
+      width: 155px;
+      max-height: 60px;
+      object-fit: contain;
+    }
+
+    .navlinks { display: flex; align-items: center; gap: 20px; }
+    .navlinks a { color: var(--muted); font-size: 14px; }
+    .navlinks a:hover { color: var(--gold); }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: linear-gradient(135deg,#f5dc98,#d1a348);
+      color: #191329;
+      font-weight: 800;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .menu-toggle {
+      display: none;
+      padding: 8px 12px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--gold);
+      border-radius: 7px;
+      font-size: 19px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 55px 0 35px;
+      background: radial-gradient(ellipse at top,#493064,transparent 65%);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(34px,5vw,50px);
+      line-height: 1.2;
+      margin: 14px 0;
+    }
+
+    h2 { font-size: 24px; margin-bottom: 8px; }
+    .gold { color: var(--gold); }
+    p { color: var(--muted); }
+
+    .hero p { max-width: 680px; margin: auto; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: .72fr 1.28fr;
+      gap: 26px;
+      align-items: start;
+      padding: 25px 0 70px;
+    }
+
+    .info-card, .form-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(145deg,#251b3c,#17142b);
+      padding: 28px;
+    }
+
+    .info-card { position: sticky; top: 100px; }
+    .info-card h2 { color: var(--gold); }
+
+    .steps {
+      list-style: none;
+      margin: 20px 0;
+    }
+
+    .steps li {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--muted);
+    }
+
+    .steps strong {
+      display: block;
+      color: var(--cream);
+      margin-bottom: 3px;
+    }
+
+    .notice {
+      margin-top: 20px;
+      border-left: 3px solid var(--gold);
+      padding: 12px 14px;
+      background: rgba(230,189,104,.08);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .form-card h2 { margin-bottom: 5px; }
+    .form-intro { font-size: 14px; margin-bottom: 24px; }
+
+    .form-section {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .form-section h3 {
+      color: var(--gold);
+      font-size: 17px;
+      margin-bottom: 16px;
+    }
+
+    .fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+    }
+
+    .field { min-width: 0; }
+    .full { grid-column: 1 / -1; }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .required { color: var(--gold); }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #514468;
+      border-radius: 8px;
+      background: #151126;
+      color: var(--cream);
+      font: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 2px rgba(230,189,104,.12);
+    }
+
+    input::placeholder, textarea::placeholder { color: #9288a6; }
+
+    select option { background: #151126; }
+
+    textarea { min-height: 110px; resize: vertical; }
+
+    .help { display: block; color: #a9a0bb; font-size: 12px; margin-top: 5px; }
+
+    .checks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .check-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-weight: 400;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .check-option input {
+      width: auto;
+      margin-top: 5px;
+      accent-color: var(--gold);
+    }
+
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      margin: 23px 0;
+    }
+
+    .consent input {
+      width: auto;
+      margin-top: 5px;
+      accent-color: var(--gold);
+    }
+
+    .consent a { color: var(--gold); text-decoration: underline; }
+
+    .submit-btn { width: 100%; font-size: 16px; }
+
+    .form-message {
+      margin-top: 15px;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    footer img {
+      width: 140px;
+      max-height: 55px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    footer p { font-size: 13px; }
+
+    @media(max-width:800px) {
+      .menu-toggle { display: block; }
+      .brand img { width: 135px; }
+
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 20px 5%;
+        background: var(--navy);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .navlinks.open { display: flex; }
+      .layout { grid-template-columns: 1fr; }
+      .info-card { position: static; }
+      .fields { grid-template-columns: 1fr; }
+      .full { grid-column: auto; }
+    }
+
+    @media(max-width:420px) {
+      .info-card, .form-card { padding: 20px; }
+      .checks { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="BABA ASTRO Home">
+      <img src="baba-astro-logo.png" alt="BABA ASTRO logo" width="155" height="60">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu"
+      aria-expanded="false" aria-controls="mainMenu">☰</button>
+
+    <div class="navlinks" id="mainMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">ASTROLOGER PARTNER REGISTRATION</span>
+      <h1>Apply to Join <span class="gold">BABA ASTRO</span></h1>
+      <p>
+        Share your details and professional experience.
+        Complete the application below to express your interest
+        in joining our astrologer partner network.
+      </p>
+    </div>
+  </section>
+
+  <div class="container layout">
+
+    <aside class="info-card">
+      <h2>Application Guide</h2>
+      <p>Keep your information accurate and up to date.</p>
+
+      <ul class="steps">
+        <li>
+          <strong>01. Your Details</strong>
+          Contact information and location.
+        </li>
+        <li>
+          <strong>02. Your Expertise</strong>
+          Specialization and experience.
+        </li>
+        <li>
+          <strong>03. Your Preferences</strong>
+          Languages and consultation methods.
+        </li>
+        <li>
+          <strong>04. Submit for Review</strong>
+          Your application may be reviewed by the team.
+        </li>
+      </ul>
+
+      <div class="notice">
+        Submitting an application does not guarantee selection,
+        earnings or immediate onboarding. Applicable terms should
+        be explained before any partnership begins.
+      </div>
+    </aside>
+
+    <section class="form-card">
+      <h2>Astrologer Application Form</h2>
+      <p class="form-intro">
+        Fields marked <span class="required">*</span> are required.
+      </p>
+
+      <!--
+        GOOGLE SHEETS CONNECTION REQUIRED:
+        Replace the empty action with your deployed Google Apps Script
+        Web App URL after configuring and testing the backend.
+        Until connected, this form does NOT save applications anywhere.
+      -->
+
+      <form id="applicationForm" action="" method="POST">
+
+        <div class="form-section" style="margin-top:0;padding-top:0;border-top:0">
+          <h3>1. Personal Information</h3>
+
+          <div class="fields">
+            <div class="field">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input id="fullName" name="fullName" type="text"
+                placeholder="Enter your full name" autocomplete="name"
+                minlength="2" maxlength="100" required>
+            </div>
+
+            <div class="field">
+              <label for="phone">Mobile Number <span class="required">*</span></label>
+              <input id="phone" name="phone" type="tel"
+                placeholder="Enter your mobile number" autocomplete="tel"
+                inputmode="tel" maxlength="20" required>
+              <span class="help">Include your country code if applicable.</span>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input id="email" name="email" type="email"
+                placeholder="you@example.com" autocomplete="email"
+                maxlength="150" required>
+            </div>
+
+            <div class="field">
+              <label for="city">City <span class="required">*</span></label>
+              <input id="city" name="city" type="text"
+                placeholder="Your city" autocomplete="address-level2"
+                maxlength="100" required>
+            </div>
+
+            <div class="field">
+              <label for="state">State</label>
+              <input id="state" name="state" type="text"
+                placeholder="Your state" autocomplete="address-level1"
+                maxlength="100">
+            </div>
+
+            <div class="field">
+              <label for="country">Country <span class="required">*</span></label>
+              <input id="country" name="country" type="text"
+                value="India" autocomplete="country-name" maxlength="100" required>
+            </div>
+
+            <div class="field">
+              <label for="ageConfirm">Age Confirmation <span class="required">*</span></label>
+              <select id="ageConfirm" name="ageConfirm" required>
+                <option value="">Select an option</option>
+                <option value="18plus">I confirm I am 18 or older</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>2. Professional Information</h3>
+
+          <div class="fields">
+            <div class="field">
+              <label for="experience">Relevant Experience <span class="required">*</span></label>
+              <select id="experience" name="experience" required>
+                <option value="">Select experience</option>
+                <option value="Less than 1 year">Less than 1 year</option>
+                <option value="1-3 years">1–3 years</option>
+                <option value="3-5 years">3–5 years</option>
+                <option value="5-10 years">5–10 years</option>
+                <option value="10+ years">10+ years</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="qualification">Relevant Training or Qualification</label>
+              <input id="qualification" name="qualification" type="text"
+                placeholder="Optional" maxlength="200">
+            </div>
+
+            <div class="field full">
+              <label>Primary Specialization <span class="required">*</span></label>
+              <select id="primarySpecialization" name="primarySpecialization" required>
+                <option value="">Choose your primary specialization</option>
+                <option value="Vedic Astrology">Vedic Astrology</option>
+                <option value="Kundli Analysis">Kundli Analysis</option>
+                <option value="Tarot Reading">Tarot Reading</option>
+                <option value="Numerology">Numerology</option>
+                <option value="Vastu">Vastu</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label>Other Areas of Expertise</label>
+              <div class="checks">
+                <label class="check-option">
+                  <input type="checkbox" name="specializations" value="Vedic Astrology">
+                  Vedic Astrology
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="specializations" value="Kundli Analysis">
+                  Kundli Analysis
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="specializations" value="Tarot Reading">
+                  Tarot Reading
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="specializations" value="Numerology">
+                  Numerology
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="specializations" value="Vastu">
+                  Vastu
+                </label>
+                <label class="check-option">
+                  <input type="checkbox" name="specializations" value="Other">
+                  Other
+                </label>
+              </div>
+              <span class="help">Select all that apply.</span>
+            </div>
+
+            <div class="field full">
+              <label for="bio">Introduce Yourself <span class="required">*</span></label>
+              <textarea id="bio" name="bio"
+                placeholder="Describe your experience, approach and areas of expertise."
+                minlength="20" maxlength="1500" required></textarea>
+              <span class="help">Write 20–1500 characters. Avoid sharing sensitive personal information.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>3. Language and Consultation Preferences</h3>
+
+          <div class="fields">
+            <div class="field">
+              <label for="language">Primary Language <span class="required">*</span></label>
+              <select id="language" name="language" required>
+                <option value="">Select a language</option>
+                <option value="Hindi">Hindi</option>
+                <option value="English">English</option>
+                <option value="Bengali">Bengali</option>
+                <option value="Marathi">Marathi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Punjabi">Punjabi</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="otherLanguages">Other Languages</label>
+              <input id="otherLanguages" name="otherLanguages" type="text"
+                placeholder="e.g. Hindi, English" maxlength="200">
+            </div>
+
+            <div class="field full">
+              <label for="consultation">Preferred Consultation Method <span class="required">*</span></label>
+              <select id="consultation" name="consultation" required>
+                <option value="">Select your preference</option>
+                <option value="Phone">Phone</option>
+                <option value="Chat">Chat</option>
+                <option value="Video">Video</option>
+                <option value="Multiple methods">Multiple methods</option>
+                <option value="Open to discussion">Open to discussion</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="availability">General Availability</label>
+              <select id="availability" name="availability">
+                <option value="">Select availability</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Flexible">Flexible</option>
+                <option value="To be discussed">To be discussed</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>4. Additional Information</h3>
+
+          <div class="fields">
+            <div class="field full">
+              <label for="profileLink">Professional Profile or Website</label>
+              <input id="profileLink" name="profileLink" type="url"
+                placeholder="https://example.com">
+              <span class="help">Optional. Only provide a link you are comfortable sharing.</span>
+            </div>
+
+            <div class="field full">
+              <label for="reference">How Did You Hear About BABA ASTRO?</label>
+              <select id="reference" name="reference">
+                <option value="">Select an option</option>
+                <option value="Google Search">Google Search</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Instagram">Instagram</option>
+                <option value="YouTube">YouTube</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Friend or Referral">Friend or Referral</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="privacyConsent" value="yes" required>
+          <span>
+            I confirm that the information provided is accurate and
+            agree that BABA ASTRO may use it to review and respond to
+            my application as described in the
+            <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+            <span class="required">*</span>
+          </span>
+        </label>
+
+        <button class="btn submit-btn" type="submit" id="submitButton">
+          Submit Application →
+        </button>
+
+        <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+
+      </form>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="index.html">
+      <img src="baba-astro-logo.png" alt="BABA ASTRO logo">
+    </a>
+
+    <p>Astrologer applications and professional onboarding.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+    <p>© <span id="year"></span> BABA ASTRO. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuButton = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".navlinks");
+
+  menuButton.addEventListener("click", function() {
+    const open = menu.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+
+  menu.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      menu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  const form = document.getElementById("applicationForm");
+  const message = document.getElementById("formMessage");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    message.textContent =
+      "The form design is ready, but submission is not connected yet. Your application has NOT been saved. Google Sheets integration must be configured before accepting applications.";
+    message.style.color = "#f3cf7d";
+  });
+</script>
+
+</body>
+</html>
