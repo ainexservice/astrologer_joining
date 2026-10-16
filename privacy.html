@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Privacy Policy | BABA ASTRO</title>
+  <meta name="description" content="Read the BABA ASTRO privacy policy for information about astrologer applications, personal information, data use, retention and privacy enquiries.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#111027">
+  <link rel="icon" href="baba-astro-logo.png">
+
+  <style>
+    :root {
+      --navy: #111027;
+      --gold: #e6bd68;
+      --cream: #fffaf0;
+      --muted: #c2bdd1;
+      --border: rgba(230,189,104,.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.8;
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { width: min(1000px, 92%); margin: auto; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(17,16,39,.97);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand img {
+      width: 155px;
+      max-height: 60px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .navlinks { display: flex; align-items: center; gap: 20px; }
+    .navlinks a { color: var(--muted); font-size: 14px; }
+
+    .menu-toggle {
+      display: none;
+      padding: 8px 12px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--gold);
+      border-radius: 7px;
+      font-size: 19px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 0 35px;
+      background: radial-gradient(ellipse at top,#493064,transparent 65%);
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(34px,5vw,48px);
+      line-height: 1.2;
+      margin: 13px 0;
+    }
+
+    h2 { font-size: 22px; margin-bottom: 10px; color: var(--gold); }
+    p { color: var(--muted); margin-bottom: 14px; }
+    ul { color: var(--muted); padding-left: 24px; margin: 8px 0 15px; }
+    li { margin-bottom: 7px; }
+
+    .updated {
+      font-size: 13px;
+      color: #a9a0bb;
+      margin-top: 10px;
+    }
+
+    .policy {
+      padding: 28px;
+      margin: 20px auto 65px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: linear-gradient(145deg,#251b3c,#17142b);
+    }
+
+    .policy section {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+      scroll-margin-top: 100px;
+    }
+
+    .policy section:first-child { padding-top: 0; }
+    .policy section:last-child { border-bottom: 0; }
+
+    .notice {
+      padding: 15px;
+      border-left: 3px solid var(--gold);
+      background: rgba(230,189,104,.08);
+      color: var(--muted);
+      font-size: 13px;
+      margin: 20px 0;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      background: linear-gradient(135deg,#f5dc98,#d1a348);
+      color: #191329;
+      font-weight: 800;
+      border-radius: 8px;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .footer-logo {
+      width: 140px;
+      max-height: 55px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    footer p { font-size: 13px; margin: 0; }
+
+    @media(max-width:800px) {
+      .menu-toggle { display: block; }
+      .brand img { width: 135px; }
+
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        padding: 20px 5%;
+        background: var(--navy);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .navlinks.open { display: flex; }
+      .policy { padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav class="container" aria-label="Main navigation">
+    <a class="brand" href="index.html" aria-label="BABA ASTRO Home">
+      <img src="baba-astro-logo.png" alt="BABA ASTRO logo" width="155" height="60">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Open menu"
+      aria-expanded="false" aria-controls="mainMenu">☰</button>
+
+    <div class="navlinks" id="mainMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="apply.html">Apply Now</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <span class="eyebrow">YOUR INFORMATION MATTERS</span>
+      <h1>Privacy <span style="color:var(--gold)">Policy</span></h1>
+      <p>
+        This page describes the intended privacy practices for the
+        BABA ASTRO astrologer application website. Review and update it
+        so it accurately reflects how your website actually operates.
+      </p>
+      <p class="updated">Last updated: 17 October 2026</p>
+    </div>
+  </section>
+
+  <article class="container policy">
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        BABA ASTRO ("we", "our" or "us") aims to handle personal
+        information responsibly when people visit this website or
+        express interest in joining as astrologer partners.
+      </p>
+      <p>
+        This policy explains the categories of information that may be
+        collected, the intended purposes of use, potential sharing,
+        retention and ways to raise a privacy enquiry.
+      </p>
+      <div class="notice">
+        Website owner: add your legal business or operator name and
+        verified privacy contact details before publishing this policy.
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Information We May Collect</h2>
+      <p>Depending on the features you actually operate, information may include:</p>
+      <ul>
+        <li>Contact details such as name, email address and phone number.</li>
+        <li>General location details such as city and state.</li>
+        <li>Professional details, experience, training and specializations.</li>
+        <li>Language, availability and consultation preferences.</li>
+        <li>Information included in messages or support enquiries.</li>
+        <li>Limited technical information generated by website hosting or security systems, where enabled.</li>
+      </ul>
+      <p>
+        Please do not submit passwords, financial account credentials,
+        government identity numbers or unrelated sensitive information
+        through the application form.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. How Information May Be Used</h2>
+      <p>Subject to applicable law and the actual services provided, information may be used to:</p>
+      <ul>
+        <li>Review and manage astrologer applications.</li>
+        <li>Contact applicants about their application or enquiry.</li>
+        <li>Assess professional experience and stated preferences.</li>
+        <li>Maintain website security and prevent misuse.</li>
+        <li>Meet applicable legal obligations and resolve disputes.</li>
+      </ul>
+      <p>
+        Information should not be used for unrelated purposes without
+        an appropriate legal basis or required notice or consent.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Application Forms and Google Sheets</h2>
+      <p>
+        The website may be configured to send application details to a
+        spreadsheet or another secure service for application management.
+        This must be disclosed accurately before the feature is activated.
+      </p>
+      <p>
+        At the time this template was prepared, the application form
+        had not yet been connected to Google Sheets. Do not claim that
+        applications are saved or processed until the integration has
+        been configured and tested.
+      </p>
+      <p>
+        If Google Sheets or another third-party service is later used,
+        identify the service, describe its role, restrict access to
+        authorized people and review the provider's applicable privacy
+        terms and security settings.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Cookies and Technical Data</h2>
+      <p>
+        The website may use essential technical logs or cookies if
+        required by its hosting, security, analytics or other enabled
+        services. The actual technologies in use should be listed here.
+      </p>
+      <p>
+        Do not state that analytics, advertising trackers or cookies
+        are used unless they have actually been installed. Provide
+        any required notice or consent controls where applicable.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Sharing of Information</h2>
+      <p>
+        Personal information should only be shared when appropriate
+        for the stated purpose, with suitable safeguards, or where
+        disclosure is required or permitted by applicable law.
+      </p>
+      <p>Depending on the website's actual setup, recipients may include:</p>
+      <ul>
+        <li>Authorized team members who review applications.</li>
+        <li>Website hosting or technical service providers.</li>
+        <li>Form, spreadsheet or communication providers that you configure.</li>
+        <li>Relevant authorities where legally required.</li>
+      </ul>
+      <p>
+        Do not promise that information is never shared if service
+        providers or other authorized recipients can access it.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Data Security</h2>
+      <p>
+        Reasonable safeguards should be used to protect personal
+        information against unauthorized access, loss, alteration
+        or disclosure. These may include access restrictions, strong
+        account security and limiting the information collected.
+      </p>
+      <p>
+        No website or online transmission can be guaranteed completely
+        secure. Configure the hosting platform and connected services
+        carefully and keep access limited to people who need it.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Data Retention</h2>
+      <p>
+        Information should be retained only for as long as reasonably
+        necessary for the stated purposes, applicable business needs
+        and legal obligations. Set an actual retention period and
+        deletion procedure that match your operating practices.
+      </p>
+      <p>
+        Do not leave applicant information in public spreadsheets or
+        retain it indefinitely without a defined reason.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Your Privacy Choices and Requests</h2>
+      <p>
+        Subject to applicable law, individuals may be able to request
+        access to, correction of, or deletion of their information,
+        withdraw a consent where applicable, or raise concerns about
+        how information is handled.
+      </p>
+      <p>
+        To make this possible, publish a monitored privacy contact
+        address and establish a process for verifying requests and
+        responding within applicable time limits.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Third-Party Services and External Links</h2>
+      <p>
+        The website may link to third-party services. Those services
+        operate under their own terms and privacy policies. Review
+        the practices of any external service before submitting
+        personal information to it.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Children's Privacy</h2>
+      <p>
+        The astrologer partner application is intended for adults.
+        Do not submit an application on behalf of a child. If you
+        believe information has been collected inappropriately,
+        contact the website operator using the verified privacy
+        contact details published on this site.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Changes to This Policy</h2>
+      <p>
+        This policy may be revised when the website's features,
+        data practices or legal requirements change. Update the
+        revision date and communicate material changes where required.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Contact About Privacy</h2>
+      <p>
+        For privacy requests or questions, contact the website
+        operator using the official details published on the
+        <a href="contact.html">Contact Us</a> page.
+      </p>
+      <p>
+        Before launch, add a real monitored privacy email address
+        and the legal name of the responsible business or operator.
+      </p>
+    </section>
+
+    <div class="actions">
+      <a class="btn" href="apply.html">Astrologer Application</a>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </div>
+
+  </article>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="index.html">
+      <img class="footer-logo" src="baba-astro-logo.png" alt="BABA ASTRO logo">
+    </a>
+
+    <p>Astrologer applications and professional onboarding.</p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="apply.html">Apply Now</a>
+      <a href="faq.html">FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+    <p>© <span id="year"></span> BABA ASTRO. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const menuButton = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".navlinks");
+
+  menuButton.addEventListener("click", function() {
+    const open = menu.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(open));
+    menuButton.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+
+  menu.querySelectorAll("a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      menu.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
+  });
+</script>
+
+</body>
+</html>
